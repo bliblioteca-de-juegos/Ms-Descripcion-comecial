@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/descripciones-comerciales")
+@RequestMapping("/api/v2/descripciones-comerciales")
 @RequiredArgsConstructor
 public class DescripcionComercialController {
 
