@@ -1,0 +1,32 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: Ms-Descripcion-comecial
+  datasource:
+    url: jdbc:mysql://localhost:3306/descripcion_comercial_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /doc/swagger-ui.html
+
+ms:
+  juegos:
+    url: http://localhost:8082
